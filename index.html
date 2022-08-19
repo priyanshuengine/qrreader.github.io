@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code reader</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="content-data">
+        <p><i class='bx bx-qr'></i> QR-Reader</p>
+        <textarea id="decoded_qr_text" cols="30" rows="10" class="hide_view" readonly></textarea>
+        <h6>&copy Priyanshu Chaturvedi</h6>
+
+        <div class="qr_code_view_area">
+            <img alt="qr code" id="qr_code_img" class="hide_view">
+            <p id="select_image_btn"><i class='bx bx-image-alt' ></i> Select Image</p>
+            <input type="file" accept="image/jpeg, image/png" id="input_select_image" hidden>
+        </div>
+
+        <div class="control_btns">
+            <button class="read_qr_btn">Read QR <i class='bx bx-chevron-right' ></i></button>
+            <button class="copy_txt_btn disable_btn">Copy <i class='bx bx-copy' ></i></button>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="jsqrcode-master/src/grid.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/version.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/detector.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/formatinf.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/errorlevel.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/bitmat.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/datablock.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/bmparser.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/datamask.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/rsdecoder.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/gf256poly.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/gf256.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/decoder.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/qrcode.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/findpat.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/alignpat.js"></script>
+    <script type="text/javascript" src="jsqrcode-master/src/databr.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
